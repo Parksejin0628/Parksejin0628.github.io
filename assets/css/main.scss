@@ -1,19 +1,9 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
 ---
 
-@import "base";
-@import "print";
-@import "responsive";
-@import "mixins";
-@import "skins/{{ site.theme_skin}}";
+@charset "utf-8";
 
-@import "includes/header";
-@import "includes/career-profile";
-@import "includes/contact";
-@import "includes/languages";
-@import "includes/education";
-@import "includes/skills";
-@import "includes/experience";
-@import "includes/publications";
-@import "includes/projects";
-@import "includes/volunteering";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
