@@ -17,4 +17,4 @@ include<cstdio>를 선언하고 **비교적 연산속도가 빠른 printf, scanf
 scanf와 cstring 라이브러리에 있는 각종 함수들을 Visual Stduio에서 사용하게 되면 에러가 발생하며 컴파일을 허용하지 않는다.\
 이는 scanf가 안전하지 않아 Visual Stduio에서 자체적으로 금지했기 때문이다.\
 백준 문제를 풀이할 때는 이 문제에 대해 신경쓸 필요가 없으므로 불필요한 에러가 된다.\
-따라서, 코드의 맨 앞줄에 **#pragma warning(disable:4996)선언 혹은 #define _CRT_SECURE_NO_WARNINGS**을 선언해야 한다.
+따라서, 코드의 맨 앞줄에 **#pragma waring(disable:4996)선언 혹은 #define _CRT_SECURE_NO_WARNINGS**을 선언해야 한다.
